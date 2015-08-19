@@ -12,31 +12,60 @@
 
   <div class="bottom-info">
     <div class="row">
-      <div class="col-sm-4">
-        <h1>Hotels</h1>
-        <select>
-          {% for hotel in hotels %}
-          <option>{{hotel.name}}</option>
-          {% endfor %}
-        </select>
+      <div class="bottom-col">
+        <h1>HOTELS</h1>
+        <div class="dropup">
+           <button class="btn btn-lg dropdown-toggle" type="button" id="hotels-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Hotels
+             <span class="caret"></span>
+           </button>
+           <ul class="dropdown-menu" aria-labelledby="hotels-drop">
+             <li class="dropdown-header">HOTELS</li>
+              {% for hotel in hotels %}
+              <li><a href="#">{{hotel.name}}</a></li>
+              {% endfor %}
+           </ul>
+        </div>
       </div>
 
-      <div class="col-sm-4">
-        <h1>Restaurants</h1>
-        <select>
-          {% for restaurant in restaurants %}
-          <option>{{restaurant.name}}</option>
-          {% endfor %}
-        </select>
+      <div class="bottom-col">
+        <h1>RESTAURANTS</h1>
+        <div class="dropup">
+           <button class="btn btn-lg dropdown-toggle" type="button" id="restaurant-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Restaurant
+             <span class="caret"></span>
+           </button>
+           <ul class="dropdown-menu" aria-labelledby="restaurant-drop">
+             <li class="dropdown-header">RESTAURANTS</li>
+              {% for restaurant in restaurants %}
+              <li><a href="#">{{restaurant.name}}</a></li>
+              {% endfor %}
+           </ul>
+        </div>
       </div>
 
-      <div class="col-sm-4">
-        <h1>Activities</h1>
-        <select>
-          {% for activity in activities %}
-          <option>{{activity.name}}</option>
-          {% endfor %}
-        </select>
+      <div class="bottom-col">
+        <h1>ACTIVITIES</h1>
+        <div class="dropup">
+           <button class="btn btn-lg dropdown-toggle" type="button" id="activity-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Activities
+             <span class="caret"></span>
+           </button>
+           <ul class="dropdown-menu" aria-labelledby="restaurant-drop">
+             <li class="dropdown-header">ACTIVITIES</li>
+              {% for activity in activities %}
+              <li><a href="#">{{activity.name}}</a></li>
+              {% endfor %}
+           </ul>
+        </div>
+      </div>
+      <div class="bottom-col separator"></div>
+      <div class="bottom-col">
+        <h1>DAYS</h1>
+        <div class="day-button btn btn-default" id="day1">1</div>
+        <div class="day-button btn btn-default" id="day2">2</div>
+        <div class="day-button btn btn-default" id="day3">3</div>
+        <div class="day-button btn btn-default" id="day4">4</div>
       </div>
     </div>
   </div>
