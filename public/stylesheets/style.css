@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
@@ -10,9 +13,9 @@ a {
   padding: 0; }
 
 .map {
-  background-color: #9999ff;
+  /*background-color: lighten(blue, 30%);*/
   bottom: 0;
-  position: fixed;
+  position: fixed !important;
   top: 0;
   right: 0;
   left: 80px; }
@@ -44,4 +47,15 @@ a {
   position: fixed;
   right: 0;
   left: 80px;
-  z-index: 1000; }
+  z-index: 1000;
+  opacity: 0.2;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+  .bottom-info:hover {
+    opacity: 0.9;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
