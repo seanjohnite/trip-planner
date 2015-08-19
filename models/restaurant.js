@@ -6,7 +6,7 @@ var ObjectId = mongoose.Schema.Types.ObjectId;
 
 var restaurantSchema = mongoose.Schema({
   name: {type: String, required: true},
-  place: [{type: Place}],
+  place: [Place.schema],
   cuisines: {type: String},
   price: {type: Number, enum: [1,2,3,4,5]}
 });

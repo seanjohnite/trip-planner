@@ -7,7 +7,7 @@ var ObjectId = mongoose.Schema.Types.ObjectId;
 
 var hotelSchema = mongoose.Schema({
   name: {type: String, required: true},
-  place: [{type: Place}],
+  place: [Place.schema],
   num_stars: {type: Number},
   amenities: String
 });

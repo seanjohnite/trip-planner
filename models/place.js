@@ -6,7 +6,7 @@ var placeSchema = mongoose.Schema({
   city: {type: String, required: true},
   state: {type: String, required: true},
   phone: {type: String, required: true},
-  location: { 
+  location: {
     type: [Number],
     required: true
   }
