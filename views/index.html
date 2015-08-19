@@ -3,25 +3,43 @@
 
 {% block content %}
 
-<h1>Hotels</h1>
-<select>
-	{% for hotel in hotels %}
-	<option>{{hotel.name}}</option>
-	{% endfor %}
-</select>
-
-<h1>Restaurants</h1>
-<select>
-	{% for restaurant in restaurants %}
-	<option>{{restaurant.name}}</option>
-	{% endfor %}
-</select>
-
-<h1>Activities</h1>
-<select>
-	{% for activity in activities %}
-	<option>{{activity.name}}</option>
-	{% endfor %}
-</select>
+<div class="container-fluid">
+  <div class="map">
+    <p>hello</p>
+  </div>
+  
+  
+  
+  <div class="bottom-info">
+    <div class="row">
+      <div class="col-sm-4">
+        <h1>Hotels</h1>
+        <select>
+          {% for hotel in hotels %}
+          <option>{{hotel.name}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      
+      <div class="col-sm-4">
+        <h1>Restaurants</h1>
+        <select>
+          {% for restaurant in restaurants %}
+          <option>{{restaurant.name}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      
+      <div class="col-sm-4">
+        <h1>Activities</h1>
+        <select>
+          {% for activity in activities %}
+          <option>{{activity.name}}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
