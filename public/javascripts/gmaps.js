@@ -5,7 +5,11 @@ function initialize_gmaps() {
     var mapOptions = {
         center: myLatlng,
         zoom: 16,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        zoomControl: true,
+        zoomControlOptions: {
+            position: google.maps.ControlPosition.RIGHT_TOP
+        }
     };
     // get the maps div's HTML obj
     var map_canvas_obj = document.getElementById("map-canvas");

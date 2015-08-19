@@ -2,23 +2,21 @@
   box-sizing: border-box; }
 
 body {
-  padding: 50px;
+  /*padding: 50px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00B7FF; }
 
-.container {
-  width: 100%;
+.container-fluid {
+  width: 100vw;
   padding: 0; }
 
 .map {
-  /*background-color: lighten(blue, 30%);*/
-  bottom: 0;
-  position: fixed !important;
-  top: 0;
-  right: 0;
-  left: 80px; }
+  height: 100vh;
+  /*  right: -$nav-width;
+  left: $nav-width;*/
+  width: 100vw; }
 
 .left-nav {
   width: 80px;
@@ -45,7 +43,7 @@ a {
   height: 250px;
   bottom: 0;
   position: fixed;
-  right: 0;
+  right: -80px;
   left: 80px;
   z-index: 1000;
   opacity: 0.2;

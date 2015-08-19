@@ -3,7 +3,7 @@
 }
 
 body {
-  padding: 50px;
+  /*padding: 50px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -13,21 +13,16 @@ a {
 
 $nav-width: 80px;
 
-.container {
-  width: 100%;
+.container-fluid {
+  width: 100vw;
   padding: 0;
 }
 
 .map {
-  /*background-color: lighten(blue, 30%);*/
-  bottom: 0;
-  position: fixed !important;
-  top: 0;
-  right: 0;
-  left: $nav-width;
-
-
-
+  height: 100vh;
+/*  right: -$nav-width;
+  left: $nav-width;*/
+  width: 100vw;
 }
 
 .left-nav {
@@ -56,7 +51,7 @@ $nav-width: 80px;
   height: 250px;
   bottom: 0;
   position: fixed;
-  right: 0;
+  right: -$nav-width;
   left: $nav-width;
   z-index: 1000;
   opacity: 0.2;
