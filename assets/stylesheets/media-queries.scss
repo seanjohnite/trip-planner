@@ -18,7 +18,7 @@ $nav-width: 80px;
   	width: 100%;
   }*/
   .map {
-		height: 200px;
+		height: 350px;
 	}
 
 	.bottom-info {
@@ -27,19 +27,28 @@ $nav-width: 80px;
 	  position: relative;
 	  z-index: 1000;
 	}
+  h1 {
+    font-size: 20pt;
+  }
 
 .bottom-col {
 
-  width: 100vh;
+  width: 100vw;
   z-index: 1000;
   text-align: center;
-  margin: 30px;
+  margin: 0;
 
 }
 
-.separator {
-  display: none;
-	}
+  .separator {
+    display: none;
+  }
+
+    ol {
+      padding-left: 0;
+      margin-top: 15px
+    } 
+
 }
 
 @media (min-width: 768px) {
@@ -67,6 +76,7 @@ $nav-width: 80px;
       font-size: 20pt;
       margin-right: 15px;
     }
+
   }
 
   .bottom-info {
@@ -91,6 +101,8 @@ $nav-width: 80px;
 	    -o-transition: all 0.2s ease-in-out;
 	    transition: all 0.2s ease-in-out;
 	  }
+
+
 	}
 
 	.bottom-col {
