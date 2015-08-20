@@ -19,6 +19,10 @@ a, span {
   }
 }
 
+.btn-lg a {
+  color: #333;
+}
+
 button span {
   color: #333;
 }
@@ -35,32 +39,12 @@ $nav-width: 80px;
   width: 4px;
   padding: 5px;
   background-color: #333;
-}
-
-.map {
-  height: 100vh;
-/*  right: -$nav-width;
-  left: $nav-width;*/
-  width: 100vw;
-}
-
-
-
-.bottom-col {
-  float: left;
-  text-align: center;
-  padding: 30px;
+  margin: 0   ;
 }
 
 .bottom-info {
-
   background-color: #aaa;
-  height: 250px;
-  bottom: 0;
-  position: fixed;
-  z-index: 1000;
 }
-
 .dropup {
   text-align: center;
 }
