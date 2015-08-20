@@ -95,6 +95,14 @@ a, span {
 .btn-lg a {
   color: #333; }
 
+.btn-lg {
+  background-color: silver;
+  border: none;
+  margin: 4px; }
+
+.dropup .btn:hover {
+  background-color: #ddd; }
+
 button span {
   color: #333; }
 
